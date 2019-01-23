@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Word Guess Game</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/css/style.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <div class="container">
+          <h1>The Word Guess Game</h1>
+          <h2>Guess the name of the fruit or vegetable!</h2>
+          <small>Click any letter to begin...</small>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title"><strong>Word to Guess</strong></h3>
+          </div>
+        </div>
+        <div class="card-body"><h3 id="word-blanks">_ _ _ _ _ _ _ _ _</h3></div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <strong>Wrong Guesses: </strong> <span id="wrong-guesses"></span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <strong>Guesses Left: </strong> <span id="guesses-left">9</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <strong>Wins: </strong> <span id="win-counter">0</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <strong>Losses: </strong> <span id="loss-counter">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/javascript/game.js"></script>
+  </body>
+</html>
